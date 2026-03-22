@@ -31,3 +31,15 @@ ON TRUE   -- assuming no direct key, adjust if product_id exists
 WHERE c.city = 'Bangalore';
 
 ON o.product_id = p.product_id
+
+-- Q4
+SELECT 
+    c.customer_name,
+    o.order_date,
+    p.product_name,
+    o.num_items AS quantity
+FROM read_csv_auto('datasets/customers.csv') c
+JOIN read_json_auto('datasets/orders.json') o
+ON c.customer_id = o.customer_id
+JOIN read_parquet('datasets/products.parquet') p
+ON TRUE;  -- adjust if product_id exists
