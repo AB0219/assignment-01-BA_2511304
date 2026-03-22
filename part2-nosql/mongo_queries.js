@@ -1,4 +1,3 @@
-// OP1: insertMany() — insert all 3 documents
 db.products.insertMany([
   {
     product_id: "ELEC001",
@@ -48,27 +47,24 @@ db.products.insertMany([
   }
 ]);
 
-// OP2: find Electronics with price > 20000
+
 db.products.find({
   category: "Electronics",
   price: { $gt: 20000 }
 });
 
-// OP3: find Groceries expiring before 2025-01-01
+
 db.products.find({
   category: "Groceries",
   expiry_date: { $lt: new Date("2025-01-01") }
 });
 
-// OP4: updateOne() — add discount_percent
+
 db.products.updateOne(
   { product_id: "ELEC001" },
   { $set: { discount_percent: 10 } }
 );
 
-// OP5: createIndex() — index on category
+
 db.products.createIndex({ category: 1 });
 
-// Explanation:
-// This index improves query performance when filtering products by category,
-// such as Electronics or Groceries, by avoiding full collection scans.
