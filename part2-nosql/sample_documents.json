@@ -1,1 +1,57 @@
-
+[
+  {
+    "product_id": "ELEC001",
+    "name": "Samsung Smart TV 55 inch",
+    "category": "Electronics",
+    "price": 55000,
+    "brand": "Samsung",
+    "warranty_years": 2,
+    "specifications": {
+      "resolution": "4K",
+      "display_type": "LED",
+      "voltage": "220V"
+    },
+    "features": ["Smart TV", "WiFi", "Bluetooth"],
+    "ratings": {
+      "average": 4.5,
+      "reviews_count": 1200
+    }
+  },
+  {
+    "product_id": "CLOT001",
+    "name": "Men's Cotton T-Shirt",
+    "category": "Clothing",
+    "price": 799,
+    "brand": "Levis",
+    "size": ["S", "M", "L", "XL"],
+    "material": "Cotton",
+    "color": ["Black", "White", "Blue"],
+    "care_instructions": {
+      "wash": "Machine wash",
+      "dry": "Do not tumble dry"
+    },
+    "ratings": {
+      "average": 4.2,
+      "reviews_count": 300
+    }
+  },
+  {
+    "product_id": "GROC001",
+    "name": "Organic Milk 1L",
+    "category": "Groceries",
+    "price": 60,
+    "brand": "Amul",
+    "expiry_date": "2024-12-30",
+    "weight": "1L",
+    "nutritional_info": {
+      "calories": 150,
+      "protein": "8g",
+      "fat": "8g"
+    },
+    "storage_instructions": "Keep refrigerated",
+    "ratings": {
+      "average": 4.6,
+      "reviews_count": 800
+    }
+  }
+]
